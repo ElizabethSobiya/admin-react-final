@@ -1,0 +1,119 @@
+.rightbar{
+    flex: 3.5;
+}
+.rightBarWrapper{
+    padding: 20px 20px 0 0;
+}
+.bdyImg{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.bdyText{
+    font-weight: 300;
+    font-size: 15px;
+}
+.birthdayContainer{
+    display: flex;
+    align-items: center;
+}
+.rightBarAd{
+    width: 100%;
+    border-radius: 10px;
+    margin: 30px 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.rightBarFriendsList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.rightBarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.rightBarProfilePicContainer{
+    margin-right:10px;
+    position: relative;
+}
+.rightBarProfilePic{
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.rightBarTitle{
+    margin-bottom: 20px;
+}
+.rightBarOnline{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid white;
+}
+.rightBarUserName{
+    font-weight: 700;
+
+}
+.rightBarTitle{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+.rightBarFollowingImg{
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.rightBarInfo{
+    margin-bottom: 30px;
+}
+.rightBarInfoItem{
+    margin-bottom: 10px;
+}
+.rightBarInfoKey{
+    font-weight: 500;
+    margin-right: 15px;
+    color: #555;
+}
+.rightBarInfoValue{
+    font-weight: 400;
+
+}
+.rightBarFollowings{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.rightBarFollowing{
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom:20px;
+    cursor: pointer;
+}

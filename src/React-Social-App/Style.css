@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;   
+}
+
+
+
+/* h1{
+    font-size: 1rem;
+} */
+
+html{
+    background: white;
+   
+}
+
+
+.topbarcontainer{
+    height:3.75rem;
+    width: 100%;
+    background-color: #0a2951;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    /* font-weight: bold; */
+
+}
+
+.topbarleftcontainer{
+    flex: 3;
+    /* background-color: aqua; */
+}
+
+.topbarcentercontainer{
+ flex: 5;
+ /* background-color: blueviolet; */
+}
+
+.logo{
+    font-size: 1.75rem;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.searchbar{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    align-items: center;
+    font-size: bold;
+}
+
+.searchInput{
+    border: none;
+    width: 70%;
+    font-size: 1.35rem;
+}
+.searchInput{
+    outline: none;
+}
+.searchIcon{
+    font-size: 20px !important;
+    margin-left: 10px;
+    color: black;
+}
+
+.topbarrightcontainer{
+    flex: 4;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #eee;
+    font-size: 1.2rem;
+}
+
+.topbarIcons{
+    display: flex;
+}
+
+.topbarImg{
+    width: 2rem;
+    height: 2rem;
+}
+
+.topbarlinks{
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.topbarLink{
+    font-size: 1.2rem;
+    padding: 1rem;
+    
+}
+.topbarIconItems{
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.topbarIconbadge{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1rem;
+    padding: 1px;
+}
+
+.topbarImg{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.homecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: white; */
+    /* color: black; */
+    width: 100%;
+   
+    
+}

@@ -1,0 +1,42 @@
+.components{
+    margin: 0rem;
+    font-size: 1rem;
+    font-size: bold;
+    color: black;
+    padding: 0rem;
+    text-align: center;
+    
+   
+}
+
+header{
+    display: flex;
+    background-color: #000080;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 0;
+   
+
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button{
+    background: #6495ED;
+    border: none;
+    border-radius: 0.2rem ;
+    -webkit-border-radius: 0.2rem ;
+    -moz-border-radius: 0.2rem ;
+    -ms-border-radius: 0.2rem ;
+    -o-border-radius: 0.2rem ;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
