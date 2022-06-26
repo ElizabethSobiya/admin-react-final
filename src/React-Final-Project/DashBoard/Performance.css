@@ -1,0 +1,41 @@
+body{
+    color: white;
+}
+.latestMain{
+    background-color:#435c70;
+    color: white;
+    margin: 30px 20px 10px 100px;
+    font-size: 15px;
+    width: 650px;
+    padding: 30px;
+}
+.perMain{
+    background-color:#435c70;
+    color: white;
+    margin: 30px 20px 10px 20px;
+    font-size: 15px;
+    width: 650px;
+    padding: 30px;
+}
+.storageInfo{
+    background-color:#435c70;
+    color: white;
+    margin: 30px 20px 10px 100px;
+    font-size: 15px;
+    width: 650px;
+    padding: 30px;
+}
+
+.upperDash{
+    display:flex;
+    flex-direction: row;
+}
+.lowerDash{
+    display:flex;
+    flex-direction: row;
+}
+.graphshead{
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 18px;
+}

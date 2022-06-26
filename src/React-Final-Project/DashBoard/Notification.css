@@ -1,0 +1,83 @@
+.notiBarItems{
+    /* background-color:#4e657a; */
+    /* padding: 15px; */
+    font-size: 16px;
+    color: white;
+    /* margin-bottom: 15px; */
+    font-weight: 400;
+    height: 100px;
+    /* display: flex; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: nowrap;  */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+/* img{
+    vertical-align: middle;
+    border-style: none;
+} */
+
+/* .notiBar{
+    display: flex;
+    flex-direction: row;
+} */
+.roundPic{
+    border-radius: 50%!important;
+    -webkit-border-radius: 50%!important;
+    -moz-border-radius: 50%!important;
+    -ms-border-radius: 50%!important;
+    -o-border-radius: 50%!important;
+    height: 80px;
+    width: 320px;
+    margin-right:20px;
+    padding: 7px;
+    object-fit: cover;
+}
+a{
+    color:#f5a623;
+    font-weight: 400;
+}
+/* webkit */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6d8da6;
+}
+
+::-webkit-scrollbar-track {
+    background: #394f62;
+}
+/* webkit end */
+/* .notiBar{
+    /* overflow-y: scroll; */
+    /* height: 550px; */
+/* }  */
+
+.notification{
+    background-color:#435c70;
+    color: white;
+    margin: 30px 20px 10px 20px;
+    font-size: 15px;
+    width: 650px;
+    padding: 30px;
+}
+
+.notiBarItems{
+    display: flex;
+    flex-direction:column;
+}
+
+.notiBarCircle{
+    display:flex;
+    flex-direction: row;
+    height: 100px;
+    background-color: #4e657a;
+    justify-content: space-between;
+    margin: 10px;
+    width: 450px;
+    padding: 10px;
+}

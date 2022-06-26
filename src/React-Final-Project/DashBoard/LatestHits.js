@@ -1,10 +1,22 @@
-// import React from 'react'
-// import { Bar } from 'react-chartjs-2'
-// import {Chart as chartjs}
+import React from 'react'
 
-// const LatestHits = () => {
+import { connect} from 'react-redux'
+import { adminData} from '../Redux/action'
+
+
+function LatestHits(data) {
+  return (
+     <>
+   
+    
+     </>
+  )
+}
+export default LatestHits
+
+// function LatestHits() {
 //   return (
-//   <>
+//     <>
 //    <div>
 //     <h3>Latest Hits</h3>
 //     <Bar 
@@ -43,6 +55,8 @@
 // }
 
 // export default LatestHits
+
+
 // //  const state = {
 // //   labels: ['January', 'February', 'March',
 // //   'April', 'May'],

@@ -92,14 +92,27 @@ body{
 }
 .loginTag:hover{
     color: #fd7e14;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.iconText:hover{
+    color:#fd7e14;
+    text-decoration: none;
+}
+.a:hover{
+    text-decoration: none;
+}
+.a:active{
+    text-decoration: none;
 }
 /* .loginTag:active{
     background-color: #fd7e14;
 } */
 
-MenuItem{
+/* MenuItem{
     font-size: 30px;
-}
+} */
 
 .loginIcons{
     transform: scale(0.9);
@@ -114,6 +127,8 @@ MenuItem{
     font-size: 16px;
     margin-top: 60px;
     margin-left: -50px;
+    color: white;
+    text-decoration: none;
     /* display: inline-block;
     vertical-align: bottom; */
     padding-top: 3rem;
@@ -123,9 +138,19 @@ MenuItem{
 /* em{
     text-decoration: none;
 } */
-a{
+a:hover{
+    color: #fd7e14;
     text-decoration: none;
+    font-size: 1.5rem;
 }
+
+
+a{
+    width: 100px;
+    color: aliceblue;
+    font-size: 1.5rem;    
+}
+
 /* Link{
     text-decoration: none;
 } */
@@ -135,7 +160,9 @@ a{
     align-items: center;
     /* margin-top: 2px; */
     cursor: pointer;
-    padding: 2rem 3rem 6rem 4rem;
+    width: 180px;
+    padding-bottom: 40px;
+    /* padding: 2rem 3rem 6rem 4rem; */
     /* background-color: ${background}; */
     
 }
@@ -177,17 +204,20 @@ a{
 
   /* login part */
 
-  .userText{
+.userText{
     font-size: 16px;
+    height: 5rem;
+     width: 37rem;
   }
 
-  label{
+label{
     display: inline-block;
     text-align: left;
     cursor: default;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    width: 400px;
   }
-  .enterBtn{
+.enterBtn{
      background-color:#f5a623;
      color: #fff;
      border: 2px solid #f5a623;
@@ -216,12 +246,12 @@ a{
 }
 
 input{
-    width: 37rem;
+    width: 39rem;
     background-color: #54657d;
     border:none;
     height: 5rem;
     outline:none;
-    color: #fff;
+    color:white;
     /* padding: 19px 18px; */
     background-clip: padding-box;
     /* transition: border-color .15s
@@ -236,7 +266,7 @@ input:hover{
     background-color:#6b7b93;
 }
 
-  .loginTab{
+.loginTab{
     background-color:#435c70;
     border-color: transparent;
     color: var(--light);
@@ -260,3 +290,46 @@ input:hover{
     display: flex;
    justify-content: center;
 }
+/* .loginTag.a:hover:not(.active) 
+{
+    background-color: #111;
+} */
+
+/* .loginTag.a.active{
+    background-color: #EAB126
+} */
+/* .successful{
+    color: red;
+    font-size: 20px;
+} */
+
+.loginNavBtn{
+    margin-left: 150px;
+    margin-top: 40px;
+    height: 30px;
+    color: white;
+    border: none;
+    background-color: #567086;
+}
+
+.loginNavBtn:hover{
+    color: #F5A623;
+}
+
+.spanBtn{
+    font-weight: 800;
+}
+
+/* link{
+    width: 100px;
+} */
+
+/* .dashIcons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+  text-decoration: none;
+} */

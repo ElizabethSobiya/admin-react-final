@@ -1,0 +1,196 @@
+.accountHead{
+    color: white;
+    /* margin-left: 10px; */
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.list{
+    background-color:#435c70;
+    margin:  50px 80px 50px 100px;
+    width: 88%;
+    height: 230px;
+    padding: 40px;
+}
+.accountSettings{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 50px 30px 50px;
+}
+label{
+    display: block;
+    width: 300px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.input{
+    display: block;
+    width: 300px;
+    margin: 10px;
+    font-size: 18px;
+    color: white;
+}
+.settingForm{
+    display: flex;
+    flex-direction: row;
+    /* margin: 30px;  */
+}
+
+.select{
+  background-color: #50657B;
+  color: #ACC6DE;
+  font-size: 16px;
+font-family: 'Roboto', 'Helvetical', 'Arial', 'sans-serif';
+  border: none;
+  outline: none;
+  width: 99%;
+  height: 50px;
+  /* margin: 40px; */
+  padding: 15px;
+  margin-bottom: 50px;
+}
+
+.avatar{
+    /* justify-content: space-between; */
+    background-color:#435c70;
+    margin:  20px 20px 50px 50px;
+    width: 30%;
+    height: 490px;
+    padding: 40px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.settings{
+    background-color:#435c70;
+    /* margin: 80px; */
+    margin:  20px 30px 50px 50px;
+    width: 60%;
+    height: 520px;
+    padding: 30px;
+    font-weight: 500;
+}
+.dltBtn{
+    background-color:#f5a623;
+    color: #fff;
+    border: 2px solid #f5a623;
+    border-radius: 0;
+    /* padding: 2rem; */
+    transition: all 0.2s ease;
+    /* max-width: 100%; */
+    height: 5rem;
+    width: 90%;
+    font-size: 90%;
+    margin: 40px;
+    font-weight: 600;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+.dltBtn:hover{
+    background-color: #435c70;
+    border: 2px solid #f5a623;
+    color: #f79b08;
+}
+.uploadBtn{
+    background-color:#f5a623;
+    color: #fff;
+    border: 2px solid #f5a623;
+    border-radius: 0;
+    /* padding: 2rem; */
+    transition: all 0.2s ease;
+    /* max-width: 100%; */
+    height: 5rem;
+    /* margin: 40px; */
+    width: 30rem;
+    margin-top: 30px;
+    font-size: 90%;
+    font-weight: 600;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+.uploadBtn:hover{
+    background-color: #435c70;
+    border: 2px solid #f5a623;
+    color: #f79b08;
+}
+.updateBtn{
+    background-color:#f5a623;
+    color: #fff;
+    border: 2px solid #f5a623;
+    border-radius: 0;
+    /* padding: 2rem; */
+    transition: all 0.2s ease;
+    /* max-width: 100%; */
+    height: 5rem;
+    width: 30rem;
+    margin: 38px 10px 10px 10px;
+    font-size: 90%;
+    font-weight: 600;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+.updateBtn:hover{
+    background-color: #435c70;
+    border: 2px solid #f5a623;
+    color: #f79b08;
+}
+
+.iconsAvatar{
+    position: relative;
+    /* bottom: -100px; */
+    left: 110px;
+    top: -240px;
+    /* display: none; */
+    visibility: hidden;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 85%;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    background-color:#394e64;
+    border-radius: 50%;
+    transition: all 0.1s linear;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+}
+img:hover{
+   visibility:visible ;
+   background-color: #f5a623;
+   cursor: pointer;
+}
+.inptFile{
+    display:none;
+    border: none;
+    /* color:#435c70;
+    background-color: #394e64; */
+}

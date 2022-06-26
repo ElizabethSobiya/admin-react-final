@@ -1,168 +1,69 @@
 import React from 'react'
-// import Main from './React-Social-App/Main';
-import Main from './React-Final-Project/Main'
-
- function App() {
-  return (
-    <>
-    <Main/>
-    </>
-
-  )
-}
-
-
-// import Form from './InputForm/Form'
-// import MainApp from './MusicApp/MainApp';
-// import { BrowserRouter, Navigate, Route , Routes,} from "react-router-dom";
-// import {useQuery} from '@apollo/client'
-// import { MyQuery } from './MusicApp/Query';
-// import Query from './MusicApp/Query'
-// import {gql} from "graphql-tag"
-// React.useEffect(()=>{
-//    const [artists, setArtists] = React.useState([]);
-//   fetch('https://above-jaybird-69.hasura.app/v1/graphql', {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//       "X-hasura-admin-secret": "hEl6BhgmXUU7fpmXAmcSmwxz6l8uxjmC6ZTOH2K1LTJYKQcgb62eZRH3VgoapVJK",
-//     },
-//     // authorization: "Bearer <hEl6BhgmXUU7fpmXAmcSmwxz6l8uxjmC6ZTOH2K1LTJYKQcgb62eZRH3VgoapVJK>",
-//     body: JSON.stringify({query: Artists})
-//   }).then(response => response.json())
-// .then(data => setArtists(data))
-// }, []);
-
-  // const [result]= useQuery({
-  //   query: MyQuery,
-    
-  // });
-  // const {data, fetching, error} = result;
-  // console.log(result)
-  // if (fetching) return "Loading...";
-  // if(error) return <prev>{error.message}</prev>
+import {connect} from 'react-redux'
+import DashBoard from './React-Final-Project/DashBoard/DashBoard'
+import LoginPage from './React-Final-Project/LoginPage/LoginPage'
+import { BrowserRouter, Navigate, Route , Routes,} from "react-router-dom";
+import ProductPage from './React-Final-Project/ProductPage/ProductPage'
+import Accounts from './React-Final-Project/Accounts/Accounts'
+import AddProduct from './React-Final-Project/AddProduct'
+import { useEffect } from 'react';
+// import NavBar from './React-Final-Project/LoginPage/Navbar'
+// import { selectUser} from './userSlice'
+// import { useSelector } from 'react-redux';
+import { adminData } from './React-Final-Project/Redux/action'
 
 
-// import React from 'react'
-// import HomePage from './MoviesWebsite/HomePage';
-// import Navbar from './MoviesWebsite/Navbar';
-// import Footer from './MoviesWebsite/Footer';
+ function App(data) {
+  
+  // console.log(data)
 
+  const CallAPI = data.data.reducer.callApi
+  const loginStatus = data.data.reducer.LoginStatus;
+  console.log(loginStatus)
 
-// function App() {
-//   return (
-//     <>
-//     {/* <h1>hello world</h1> */}
-//     <Navbar/>
-//      <HomePage/> 
-//      <Footer/> 
-//     </>
-//   )
-// }
+  localStorage.setItem('isLoggedIn', loginStatus);
+  let isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'))
 
+ useEffect( () => {
+  if(CallAPI === true){
+    data.addData();
+  }
+ }, [isLoggedIn])
 
-
-
-// import React, {Fragment, useState, useEffect } from "react";
-// import Home from "./Router/Home";
-// import { BrowserRouter, Navigate, Route , Routes,} from "react-router-dom";
-// import About from "./Router/About";
-// import Details from "./Router/Details";
-// import Navbar from "./Router/Navbar";
-
-// function App() {
+//   const [isLoggedIn,setIsLoggedIn] = useState(JSON.parse(localStorage.getItem("isLoggedIn")))
 
 //   useEffect(() => {
-//     if (JSON.parse(localStorage.getItem("isLoggedIn")) == null){
-//       localStorage.setItem("isLoggedIn", false)
-//     }
-//   })
- 
-   
-//   const [isLoggedIn,setIsLoggedIn] = useState(JSON.parse(localStorage.getItem("isLoggedIn")))
-//   return (
-   
-    
-
-//     <div className="components">
-//       {/* <h1>APP COMPONENT</h1> */}
-//       <BrowserRouter>
-//       <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn ={setIsLoggedIn}/>
-//        <Routes>
-//        <Route path = "/" element ={ <Home/> } />
-//        <Route path= "/about" element = { isLoggedIn == true ? <About/> : <Navigate to= '/'/>} />
-//        <Route path= "/details" element = {isLoggedIn == true ? <Details/> : <Navigate to= '/'/>} />
-//        <Route path="*" element ={ <h1>404 page not found</h1>}/>
-//        </Routes>
-//       </BrowserRouter>
-//     </div>
-//   )
-// }
-
-
-// import React, { Component } from 'react'
-// import Counter from "./Counter";
-
-//  class App extends Component {
-  
-
-    
-//     render() {
-//     return (
-//       <div>
-//         <Counter/>
-//       </div>
-//     )
+//   if (JSON.parse(localStorage.getItem("isLoggedIn")) == null){
+//     localStorage.setItem("isLoggedIn", false)
 //   }
-// }
+// })
+
+//  const user = useSelector(selectUser)
+  return (
+    <>
+   <BrowserRouter>
+   {/* <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn ={setIsLoggedIn}/> */}
+     <Routes>
+     <Route path ='/' element = {<LoginPage/>} />
+     <Route path ='/dashboard'element = { isLoggedIn == true ? <DashBoard/> : <Navigate to = '/'/>}/>
+      <Route path ='/products' element = { isLoggedIn == true ? <ProductPage/> : <Navigate to = '/'/>}/> 
+     <Route path ='/accounts' element = { isLoggedIn == true ? <Accounts/> : <Navigate to = '/'/>}/> 
+     <Route path ='/addProduct' element = { isLoggedIn == true ? <AddProduct/> : <Navigate to = '/'/>}/> 
+      </Routes> 
+    </BrowserRouter> 
+    </>
+  )
+}
+const mapStateToProps = (props) => ({
+  data: props,
+})
 
 
+const mapDispatchToProps = (dispatch) => ({
+  addData: (data) => {
+    dispatch(adminData());
+  }
+})
 
 
-
-
-// // import React, { Component } from "react";
-// // import AdminPanel from './AdminPanel/AdminPanel'
-// import axios from 'axios';
-// import GridDesign from './GridDesign/GridDesign.js';
-// // import './GridDesign.css'
-// import { Component } from 'react';
-
-
-
-// export class App extends Component{
-//   render(){
-//     return(
-//       <div>
-//         <GridDesign/>
-//       </div>
-//     )
-//   }
-// }
-
-// function App(){
-//   return(
-//     <div>
-//        <GridDesign/>
-//     </div>
-//   )
-// }
-
-
-// export class App extends Component{
-
-  
-//   render (){
-//   return (
-//     <div>
-//     
-//       {/* <AdminPanel/> */}
-//     </div>
-//   )
-// }
-// }
-
-
-
-
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);

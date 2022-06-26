@@ -25,6 +25,52 @@
  
 //  export default HomePage
 
+// import React from 'react'
+// import {products} from '../Data'
+// // import DeleteIcon from '@mui/icons-material/Delete';
+// import './ProductPage.css'
+// // import {products} from '../Data'
+
+
+// function ProductTable({prdt}) {
+//   return (
+//     <>
+//      <tr>
+//             <td><input type="checkbox" className='checkboxRound'/></td>
+//             <td>{prdt.description.slice(0,17)}</td>
+//             <td>{prdt.unitSold}</td>
+//             <td>{prdt.stock}</td>
+//             <td>{prdt.expireDate}</td>
+//             <td><div className='icons' ><i className='fa fa-trash' style={{fontSize:'18px'}}></i></div></td>
+//         </tr>
+
+//     </>
+//   )
+// }
+
+// export default ProductTable
+
+// import React from 'react'
+// // import {category} from '../Data'
+// // import DeleteIcon from '@mui/icons-material/Delete';
+// import './ProductPage.css'
+// // import data from '../mock.data.json'
+
+
+// function CatTable({cat}) {
+//   return (
+//    <>
+//    <tr> 
+//     <td>{cat.type}</td>
+//     <td><div className='icons' ><i className='fa fa-trash' style={{fontSize:'20px'}}></i></div></td>
+//     </tr>
+//    </>
+//   //  <DeleteIcon/>
+//   )
+// }
+
+// export default CatTable
+
 
 //  import React, { Component } from 'react'
 
@@ -88,3 +134,21 @@
 // }
 
 // export default Navbar
+
+// const navigate = useNavigate();
+
+// const addProduct = () => {
+//   navigate('./addProduct')
+// }
+// const [list, updateList] = useState(data);
+
+// const handleRemoveItem = idx => {
+//   // assigning the list to temp variable
+//   const temp = [...list];
+
+//   // removing the element using splice
+//   temp.splice(idx, 1);
+
+//   // updating the list
+//   updateList(temp);
+// }
