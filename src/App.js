@@ -30,19 +30,11 @@ import { adminData } from './React-Final-Project/Redux/action'
   }
  }, [isLoggedIn])
 
-//   const [isLoggedIn,setIsLoggedIn] = useState(JSON.parse(localStorage.getItem("isLoggedIn")))
 
-//   useEffect(() => {
-//   if (JSON.parse(localStorage.getItem("isLoggedIn")) == null){
-//     localStorage.setItem("isLoggedIn", false)
-//   }
-// })
-
-//  const user = useSelector(selectUser)
   return (
     <>
    <BrowserRouter>
-   {/* <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn ={setIsLoggedIn}/> */}
+ 
      <Routes>
      <Route path ='/' element = {<LoginPage/>} />
      <Route path ='/dashboard'element = { isLoggedIn == true ? <DashBoard/> : <Navigate to = '/'/>}/>

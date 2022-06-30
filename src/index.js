@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { configureStore } from '@reduxjs/toolkit';
 import reducer from './React-Final-Project/Redux/index'
 import { Provider } from 'react-redux';
-// import store from './React-Final-Project/store';
+
 
 let store = configureStore({reducer:reducer, devTools : window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() })
 

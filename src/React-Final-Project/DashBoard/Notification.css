@@ -51,11 +51,7 @@ a{
 ::-webkit-scrollbar-track {
     background: #394f62;
 }
-/* webkit end */
-/* .notiBar{
-    /* overflow-y: scroll; */
-    /* height: 550px; */
-/* }  */
+
 
 .notification{
     background-color:#435c70;

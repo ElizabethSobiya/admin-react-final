@@ -17,7 +17,8 @@ function Accounts(data) {
   const myref = useRef(null);
 
   const allAccounts = data.data.reducer.accountPage;
-  // console.log(allAccounts)
+ 
+  /*console.log(accounts) */ 
 
   const newData = JSON.stringify(allAccounts);
  
