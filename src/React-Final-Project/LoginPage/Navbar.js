@@ -76,7 +76,7 @@ const handleAccountClick = () => {
      <div className="loginTag"  >
          <i className='fa fa-tachometer' style={{fontSize:'27px'}} ></i>
          <Link to='/dashboard'
-          styles={{ background: isActiveDashboard ? '#F5A623' : '', color : isActiveDashboard ? 'white' : '', }}
+          // styles={{ background: isActiveDashboard ? '#F5A623' : '', color : isActiveDashboard ? 'white' : '', }}
            onClick ={() => {
             handleDashboardClick()
            }}
@@ -85,15 +85,16 @@ const handleAccountClick = () => {
      <div className="loginTag" >
         <ShoppingCartRoundedIcon fontSize='10px' className='loginIcons'/>
         <Link to='/products' 
-        styles={{ background: isActiveProduct ? '#F5A623' : '', color : isActiveProduct ? 'white' : '', }}
+        // styles={{ background: isActiveProduct ? '#F5A623' : '', color : isActiveProduct ? 'white' : '', }}
         onClick ={() => {
          handleProductClick()
         }}><p className="iconText">Products</p></Link>
          </div>
     <div className="loginTag"> 
     <PersonOutlineRoundedIcon fontSize='10px' className='loginIcons'/>
+    {/*  styles={{ background: isActiveAccount ? '#F5A623' : '', color : isActiveAccount ? 'white' : '', }} */}
     <Link to='/accounts'  
-    styles={{ background: isActiveAccount ? '#F5A623' : '', color : isActiveAccount ? 'white' : '', }}
+   
     onClick ={() => {
      handleAccountClick()
     }}><p className="iconText">Accounts</p></Link>
