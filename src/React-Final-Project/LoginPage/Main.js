@@ -118,7 +118,7 @@ function Main(data) {
                     <br />
                     <br />
                 </div>
-                {/* <input className='enterBtn' type="submit" onClick= {()=> {login()}} value='FORGOT YOUR PASSWORD' spellCheck='true'/> */}
+                <input className='enterBtn' type="submit" value='FORGOT YOUR PASSWORD' spellCheck='true'/>
             </div>
         </>
     )

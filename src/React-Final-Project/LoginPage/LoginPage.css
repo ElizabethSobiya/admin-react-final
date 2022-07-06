@@ -86,15 +86,21 @@ body{
     justify-content: space-between;
     margin-top: 3rem;
     padding-left: 5rem; */
+    width: 450px;
+    color: white;
+    justify-content: space-between;
+    /* height: 100%; */
+    box-sizing: border-box;
+    background-color: #567086;
     font-family: var(--font-family-sans-serif);
-    padding-left: 20rem;
+    margin-left: 250px;
     
 }
-.loginTag:hover{
+/* .loginTag:hover{
     color: #fd7e14;
     text-decoration: none;
     font-size: 1.5rem;
-}
+} */
 
 .iconText:hover{
     color:#fd7e14;
@@ -120,18 +126,19 @@ body{
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
     -o-transform: scale(0.9);
-    font-size: 33px;
+    /* font-size: 33px; */
    
 }
 .iconText{
     font-size: 16px;
-    margin-top: 60px;
-    margin-left: -50px;
+    margin-top: 10px;
+    /* margin-left: -50px; */
     color: white;
     text-decoration: none;
+    justify-content: center;
     /* display: inline-block;
     vertical-align: bottom; */
-    padding-top: 3rem;
+    padding-top: 0.3rem;
     /* text-decoration: none !important; */
 }
 
@@ -332,4 +339,51 @@ input:hover{
   color: white;
   padding: 0 20px;
   text-decoration: none;
+} */
+
+.icon3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 25px;
+    text-decoration: none;
+}
+
+.icon2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 25px;
+    text-decoration: none;
+}
+.icon1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 25px;
+    text-decoration: none;
+}
+
+.icon1:hover{
+    color: #F5A623;
+    transition-delay: 0.3s all;
+}
+
+.icon2:hover{
+    color: #F5A623;
+    transition-delay: 0.3s all;
+}
+.icon2:hover{
+    color: #F5A623;
+    transition-delay: 0.3s all;
+}
+
+/* .rightIcons{
+
 } */

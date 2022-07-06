@@ -73,32 +73,38 @@ const handleAccountClick = () => {
         <h4>Product admin</h4>
     </div>
      <div className="rightIcons">
-     <div className="loginTag"  >
-         <i className='fa fa-tachometer' style={{fontSize:'27px'}} ></i>
+    
+         
          <Link to='/dashboard'
-          // styles={{ background: isActiveDashboard ? '#F5A623' : '', color : isActiveDashboard ? 'white' : '', }}
+         className='icon1'
+          styles={{ background: isActiveDashboard ? '#F5A623' : '', color : isActiveDashboard ? 'white' : '', }}
            onClick ={() => {
             handleDashboardClick()
-           }}
-          ><p className="iconText">Dashboard</p></Link>
-    </div> 
-     <div className="loginTag" >
-        <ShoppingCartRoundedIcon fontSize='10px' className='loginIcons'/>
+           }}> 
+           <i className='fa fa-tachometer' style={{fontSize:'27px'}} ></i>
+           <p className="iconText">Dashboard</p></Link>
+   
+    
         <Link to='/products' 
-        // styles={{ background: isActiveProduct ? '#F5A623' : '', color : isActiveProduct ? 'white' : '', }}
+          className='icon2'
+        styles={{ background: isActiveProduct ? '#F5A623' : '', color : isActiveProduct ? 'white' : '', }}
         onClick ={() => {
          handleProductClick()
-        }}><p className="iconText">Products</p></Link>
-         </div>
-    <div className="loginTag"> 
-    <PersonOutlineRoundedIcon fontSize='10px' className='loginIcons'/>
-    {/*  styles={{ background: isActiveAccount ? '#F5A623' : '', color : isActiveAccount ? 'white' : '', }} */}
-    <Link to='/accounts'  
+        }}> 
+        <ShoppingCartRoundedIcon style={{fontSize:'27px'}} className='loginIcons'/>
+        <p className="iconText">Products</p>
+        </Link>
+       
    
+    <Link to='/accounts'  
+      className='icon3'
+     styles={{ background: isActiveAccount ? '#F5A623' : '', color : isActiveAccount ? 'white' : '', }}   
     onClick ={() => {
      handleAccountClick()
-    }}><p className="iconText">Accounts</p></Link>
-    </div>  
+    }}>
+    <PersonOutlineRoundedIcon  style={{fontSize:'27px'}} className='loginIcons'/>
+      <p className="iconText">Accounts</p>
+      </Link>
      </div>
      <LoginBtnfunc/>
     </div>
